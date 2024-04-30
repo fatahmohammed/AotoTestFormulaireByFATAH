@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="11.452" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Test du formulaire de contact" name="Remplir et envoyer le formulaire de contact avec succès" time="11.244">
+<testsuite name="Cucumber" time="9.984" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Test du formulaire de contact" name="Remplir et envoyer le formulaire de contact avec succès" time="9.759">
 <system-out><![CDATA[
 Given Je suis sur la page du formulaire de contact..........................passed
 When Je saisis "Mohammed" dans le champ Prénom..............................passed
