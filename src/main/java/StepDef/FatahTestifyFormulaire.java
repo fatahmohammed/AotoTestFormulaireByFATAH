@@ -15,6 +15,7 @@ import org.openqa.selenium.WebElement;
 public class FatahTestifyFormulaire {
     private WebDriver driver;
 
+    // Méthode pour ouvrir la page du formulaire de contact
     @Given("Je suis sur la page du formulaire de contact")
     public void je_suis_sur_la_page_du_formulaire_de_contact() {
         driver=new ChromeDriver();
