@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="11.452" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Test du formulaire de contact" name="Remplir et envoyer le formulaire de contact avec succès" time="11.244">
+<system-out><![CDATA[
+Given Je suis sur la page du formulaire de contact..........................passed
+When Je saisis "Mohammed" dans le champ Prénom..............................passed
+And Je saisis "FATAH" dans le champ Nom.....................................passed
+And Je saisis "Testify" dans le champ Entreprise............................passed
+And Je saisis "35 Rue Rémy Dumocel, 77210 AVON" dans le champ Adresse.......passed
+And Je saisis "fatah.mohammed.in@gmail.com" dans le champ Adresse email.....passed
+And Je saisis "+33" dans le champ Espace Code...............................passed
+And Je saisis "0759878107" dans le champ Numéro de téléphone................passed
+And Je sélectionne "Industrie da la confiserie." dans le champ Secteur de entreprise.passed
+And Je saisis "Merci c'est juste pour tester ce formulaire" dans le champ Zone de texte.passed
+And Je clique sur J'accepte pour accepter les conditions....................passed
+And Je clique sur le bouton "Envoyer".......................................passed
+Then Je devrais voir un message de succès Thank You indiquant que le formulaire a été envoyé avec succès.passed
+]]></system-out>
+</testcase>
+</testsuite>
