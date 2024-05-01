@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
         plugin = {"pretty", "junit:traget/JUnitReports/report.xml",
                 "json:traget/JSONReports/report.json",
                 "html:traget/HTMLReports/report.html"},
-        tags = "@smoketest"
+        tags = "@smoketest or @caserreur"
 
 )
 

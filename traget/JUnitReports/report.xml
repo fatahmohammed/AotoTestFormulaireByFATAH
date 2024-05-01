@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="10.749" tests="2" skipped="0" failures="0" errors="0">
-<testcase classname="Soumission du formulaire de contact" name="Soumission réussie du formulaire de contact" time="6.812">
+<testsuite name="Cucumber" time="8.89" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="Soumission du formulaire de contact" name="Soumission réussie du formulaire de contact" time="4.485">
 <system-out><![CDATA[
 Given l'utilisateur accède à la page du formulaire de contrat...............passed
 When l'utilisateur remplit les details suivants :...........................passed
@@ -9,7 +9,7 @@ And l'utilisateur soumit le formulaire......................................pass
 Then un message de succès "Thank You!" s'affiche............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Soumission du formulaire de contact" name="Soumission non réussie du formulaire de contact sans remplir les détails" time="3.639">
+<testcase classname="Soumission du formulaire de contact" name="Soumission non réussie du formulaire de contact sans remplir les détails" time="4.213">
 <system-out><![CDATA[
 Given l'utilisateur accède à la page du formulaire de contrat...............passed
 When l'utilisateur soumit le formulaire.....................................passed
