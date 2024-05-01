@@ -13,7 +13,6 @@ Feature: Soumission du formulaire de contact
     And l'utilisateur accepte les conditions
     And l'utilisateur soumit le formulaire
     Then un message de succès "Thank You!" s'affiche
-
   @smoketest
   Scenario: Soumission non réussie du formulaire de contact sans remplir les détails
     Given l'utilisateur accède à la page du formulaire de contrat

@@ -47,6 +47,7 @@ public class Formulaire {
         contactFormPage.enterText(contactFormPage.messageField, data.get(0).get("Message"));
     }
 
+
     @When("l'utilisateur accepte les conditions")
     public void acceptTermsAndConditions() {
         contactFormPage.acceptTermsAndConditions();

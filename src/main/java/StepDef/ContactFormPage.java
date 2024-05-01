@@ -97,6 +97,7 @@ public class ContactFormPage {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         for (By element : elements) {
             wait.until(visibilityOfElementLocated(element));
+
         }
 
 

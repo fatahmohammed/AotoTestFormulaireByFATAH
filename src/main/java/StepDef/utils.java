@@ -8,6 +8,7 @@ public class utils {
     public void scrollToElement(WebElement webElement, WebDriver driver) throws Exception {
         String js_code = "arguments[0].scrollIntoView();";
         ((JavascriptExecutor) driver).executeScript(js_code, webElement);
+        
     }
 }
 
