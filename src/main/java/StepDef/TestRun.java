@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src\\test\\resources\\Feature", glue = {"StepDef"},
+@CucumberOptions(features = "FATAH_Test_Fianl\\src\\test\\resources\\Feature", glue = {"StepDef"},
         monochrome = true,
         plugin = {"pretty", "junit:traget/JUnitReports/report.xml",
                 "json:traget/JSONReports/report.json",

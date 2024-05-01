@@ -3,7 +3,6 @@ package StepDef;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -12,7 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfAllElementsLocatedBy;
 import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated;
 
 public class ContactFormPage {
@@ -97,8 +95,9 @@ public class ContactFormPage {
         elements.add(messageFieldErruer);
         elements.add(accepteLesConditionsErruer);
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-        for (int i = 0; i < elements.size(); i++)
-            wait.until(visibilityOfElementLocated(elements.get(i)));
+        for (By element : elements) {
+            wait.until(visibilityOfElementLocated(element));
+        }
 
 
     }
