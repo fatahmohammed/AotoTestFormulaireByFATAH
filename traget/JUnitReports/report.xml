@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="9.984" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Test du formulaire de contact" name="Remplir et envoyer le formulaire de contact avec succès" time="9.759">
+<testsuite name="Cucumber" time="9.079" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="Soumission du formulaire de contact" name="Soumission réussie du formulaire de contact" time="6.209">
 <system-out><![CDATA[
-Given Je suis sur la page du formulaire de contact..........................passed
-When Je saisis "Mohammed" dans le champ Prénom..............................passed
-And Je saisis "FATAH" dans le champ Nom.....................................passed
-And Je saisis "Testify" dans le champ Entreprise............................passed
-And Je saisis "35 Rue Rémy Dumocel, 77210 AVON" dans le champ Adresse.......passed
-And Je saisis "fatah.mohammed.in@gmail.com" dans le champ Adresse email.....passed
-And Je saisis "+33" dans le champ Espace Code...............................passed
-And Je saisis "0759878107" dans le champ Numéro de téléphone................passed
-And Je sélectionne "Industrie da la confiserie." dans le champ Secteur de entreprise.passed
-And Je saisis "Merci c'est juste pour tester ce formulaire" dans le champ Zone de texte.passed
-And Je clique sur J'accepte pour accepter les conditions....................passed
-And Je clique sur le bouton "Envoyer".......................................passed
-Then Je devrais voir un message de succès Thank You indiquant que le formulaire a été envoyé avec succès.passed
+Given l'utilisateur accède à la page du formulaire de contrat...............passed
+When l'utilisateur remplit les details suivants :...........................passed
+And l'utilisateur accepte les conditions....................................passed
+And l'utilisateur soumit le formulaire......................................passed
+Then un message de succès "Thank You!" s'affiche............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Soumission du formulaire de contact" name="Soumission non réussie du formulaire de contact sans remplir les détails" time="2.694">
+<system-out><![CDATA[
+Given l'utilisateur accède à la page du formulaire de contrat...............passed
+When l'utilisateur soumit le formulaire.....................................passed
+Then des messages d'erreur s'affiche........................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
